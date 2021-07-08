@@ -1,0 +1,24 @@
+{
+  "downstream-systems": [
+    {
+      "type": "REST",
+      "name": "reconcile-system-2",
+      "rest-url" : "http://test/send",
+      "rest-url-method" : "POST"
+    },
+    {
+      "type": "MQ",
+      "name": "reconcile-system-2",
+      "mq-broker-url": "tcp://localhost:61616",
+      "mq-queue-name": "test-queue",
+      "mq-user-name": "admin",
+      "mq-user-password": "admin"
+    },
+    {
+      "type": "FILE",
+      "name": "reconcile-system-3",
+      "file-location": "/file/location",
+      "file-name": "abc.csv"
+    }
+  ]
+}

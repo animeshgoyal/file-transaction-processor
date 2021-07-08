@@ -1,0 +1,11 @@
+{
+  "rules": [
+    {
+      "name" : "reconcile-system-sender-rule",
+      "description" : "Rule to send to one of the systems",
+      "priority" : "1",
+      "condition": "transaction.type == \"Type1\"",
+      "downstream-system-names": ["reconcile-system-3"]
+    }
+  ]
+}
